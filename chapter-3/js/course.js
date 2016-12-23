@@ -1,12 +1,17 @@
 var weather = prompt("What's the weather like? \n(sunny, windy, rainy or snowy)");
-if (weather === "sunny") {
+switch (weather){
+case "sunny":
 	console.log("T-shirt time!");
-} else if (weather === "windy") {
+	break;
+case "windy":
 	console.log("Windbreaker life.");
-} else if (weather === "rainy") {
+	break;
+case "rainy":
 	console.log("Bring that umbrella!");
-} else if (weather === "snowy") {
+	break;
+case "snowy":
 	console.log("Just stay inside!");
-} else {
+	break;
+default:
 	console.log("Not a valid weather type");
 }
