@@ -1,7 +1,5 @@
-console.log("start of program");
-var number = 1;
-while(number <=5) {
-	console.log(number);
-	number++;
+var letter= "";
+while (letter!=="X"){
+	letter = prompt("Type any letter or X to exit:");
+	console.log(letter);
 }
-console.log("end of program");
