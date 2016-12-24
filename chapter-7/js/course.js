@@ -1,15 +1,17 @@
-var pen = {
-	type: "ballpoint",
-	color: "blue",
-	brand: "Bic"
+var cake = {
+	flavor: "vanilla",
+	price: "$10", // dollars
+	layers: 4,
+	occasion:"birthday"
 };
 
-console.log(pen.brand);
+console.log("The " + cake.occasion + " cake has a " + cake.flavor + " flavor, " + cake.layers +
+	" layers, and costs " + cake.price + "." );
 
-console.log("My pen is a " + pen.color + " " + pen.brand + " " + pen.type + " pen.");
+	cake.occasion = "wedding";
+	cake.flavor = "strawberry";
+	cake.layers = cake.layers + 8;
+	cake.price = "$50";
 
-pen.color = "red";
-pen.price = "2.5"; 
-
-console.log("My pen is a " + pen.color + " " + pen.brand + " " + pen.type + " pen.");
-console.log("My pen costs " + "$" + pen.price);
+	console.log("The " + cake.occasion + " cake has a " + cake.flavor + " flavor, " 
+		+ cake.layers + " layers, and costs " + cake.price + "."); 
